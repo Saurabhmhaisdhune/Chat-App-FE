@@ -1,0 +1,78 @@
+.contacts-main-div {
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  overflow: hidden;
+  background-color: #abd4ff;
+}
+.contact-h3{
+  font-size: 22px;
+}
+.brands {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  background-color: #81b9f5;
+}
+.brands > img {
+  height: 3.5rem;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  gap: 0.8rem;
+}
+.contacts::-webkit-scrollbar {
+  width:0px;
+}
+.contacts-thumb {
+  /* background-color: #f0000039; */
+  width: 0.1rem;
+  border-radius: 1rem;
+}
+.contact {
+  background-color: #e7efff64;
+  min-height: 4rem;
+  cursor: pointer;
+  width: 92.5%;
+  padding: 0.3rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.contact:hover{
+  background-color:#abd4ff;
+}
+.username> h3 {
+  color: rgb(0, 0, 0);
+  font-family:cursive;
+  font-weight: 200;
+}
+.selected {
+  background-color: #81b9f5;
+}
+.current-user {
+  background-color: #81b9f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.avatar > img {
+  height: 3.2rem;
+  max-inline-size: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.username > h2 {
+  color: rgb(0, 0, 0);
+  font-family:cursive;
+  font-weight: 200;
+  font-size: 22px;
+}
+.current-user-avatar{
+  height: 4.5rem;
+}

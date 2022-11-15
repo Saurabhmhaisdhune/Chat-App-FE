@@ -1,0 +1,15 @@
+.welcome-container{display: flex;
+justify-content: center;
+align-items: center;
+color: rgb(0, 0, 0);
+flex-direction: column;
+}
+.img {
+  height: 20rem;
+}
+.span {
+  color: #4e0eff;
+}
+.welcome-message{
+  color: black;
+}
