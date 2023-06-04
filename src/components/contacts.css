@@ -2,20 +2,23 @@
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
-  background-color: #abd4ff;
+  background-color: #242424;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .contact-h3{
   font-size: 22px;
+  color: white;
 }
 .brands {
   display: flex;
   align-items: center;
   gap: 1rem;
   justify-content: center;
-  background-color: #81b9f5;
+  background-color: #000000;
 }
 .brands > img {
-  height: 3.5rem;
+  height: 3rem;
 }
 .contacts {
   display: flex;
@@ -23,56 +26,54 @@
   align-items: center;
   overflow: auto;
   gap: 0.8rem;
+  padding-top: 5px;
 }
 .contacts::-webkit-scrollbar {
   width:0px;
 }
 .contacts-thumb {
-  /* background-color: #f0000039; */
   width: 0.1rem;
   border-radius: 1rem;
 }
 .contact {
-  background-color: #e7efff64;
+  background-color: #000000;
   min-height: 4rem;
   cursor: pointer;
   width: 92.5%;
-  padding: 0.3rem;
   display: flex;
-  gap: 1.5rem;
   align-items: center;
   transition: 0.5s ease-in-out;
 }
 .contact:hover{
-  background-color:#abd4ff;
+  background-color:#4a4b4d;
 }
 .username> h3 {
-  color: rgb(0, 0, 0);
-  font-family:cursive;
-  font-weight: 200;
+  color: rgb(255, 255, 255);
+  font-family: Helvetica,sans-serif;
+  font-weight: 100;
 }
 .selected {
-  background-color: #81b9f5;
+  background-color: #726c6c52;
 }
 .current-user {
-  background-color: #81b9f5;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 .avatar > img {
-  height: 3.2rem;
+  height: 3rem;
   max-inline-size: 100%;
   border: 1px solid black;
   border-radius: 50%;
 }
 .username > h2 {
-  color: rgb(0, 0, 0);
-  font-family:cursive;
+  color: rgb(255, 255, 255);
+  font-family: Helvetica,sans-serif;
   font-weight: 200;
   font-size: 22px;
 }
 .current-user-avatar{
-  height: 4.5rem;
+  height: 3rem;
 }

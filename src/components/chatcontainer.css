@@ -1,8 +1,9 @@
 .chatcontainer {
   display: grid;
   grid-template-rows: 10% 80% 10%;
-  /* gap: 0.1rem; */
   overflow: hidden;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 @media screen and (min-width: 720px) and (max-width: 1080px) {
   .chatcontainer {
@@ -14,8 +15,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  background-color: #81b9f5;
-  border-left: 2px solid #8fcdff;
+  background-color: #000000;
+  border-left: 2px solid #000000;
 }
 .user-details {
   display: flex;
@@ -27,7 +28,7 @@
   height: 3rem;
 }
 .username > h3 {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .chat-messages {
   padding: 1rem 2rem;
@@ -35,12 +36,13 @@
   flex-direction: column;
   gap: 1rem;
   overflow: auto;
+  background-color: #000000ce;
 }
 .chat-messages::-webkit-scrollbar {
   width: 0.2rem;
 }
 .chat-messages-thumb {
-        background-color: #ffffff39;
+        background-color: #00000039;
         width: 0.1rem;
         border-radius: 1rem;
       }
@@ -51,10 +53,10 @@
 .content {
   max-width: 40%;
   overflow-wrap: break-word;
-  padding: 1rem;
+  padding: 0px 15px 0px 15px;
   font-size: 1.1rem;
-  border-radius: 1rem;
-  color: #000000;
+  border-radius: 15px;
+  color: #ffffff;
 }
 @media screen and (min-width: 720px) and (max-width: 1080px) {
   .content {
@@ -65,12 +67,12 @@
   justify-content: flex-end;
 }
 .sended > .content {
-  background-color: #4f04ff21;
+  background-color: #000000;
 }
 
 .recieved {
   justify-content: flex-start;
 }
 .recieved > .content {
-  background-color: #9900ff20;
+  background-color: #000000;
 }

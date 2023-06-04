@@ -1,8 +1,12 @@
-.welcome-container{display: flex;
-justify-content: center;
-align-items: center;
-color: rgb(0, 0, 0);
-flex-direction: column;
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  flex-direction: column;
+  border: 20px;
+  /* border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px; */
 }
 .img {
   height: 20rem;
@@ -10,6 +14,6 @@ flex-direction: column;
 .span {
   color: #4e0eff;
 }
-.welcome-message{
+.welcome-message {
   color: black;
 }

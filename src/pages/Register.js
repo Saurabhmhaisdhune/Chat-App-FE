@@ -84,54 +84,49 @@ function Register() {
     }
   };
   return (
-    <>
+    <div>
       <div className="main1">
-        <div>
-          <img
-            src="https://cdn.dribbble.com/users/1894420/screenshots/11700268/online-video-chat.gif"
-            alt="animation"
-            className="animation"
+        <form
+          action=""
+          onSubmit={(event) => handleSubmit(event)}
+          className="register-form"
+        >
+          <div className="brand">
+            <img src={Logo} alt="logo" className="register-logos" />
+            <h1>Let's CHAT</h1>
+          </div>
+          <input
+            type="text"
+            placeholder="Username"
+            name="username"
+            onChange={(e) => handleChange(e)}
           />
-        </div>
-        <div className="main">
-          <form action="" onSubmit={(event) => handleSubmit(event)} className="register-form">
-            <div className="brand">
-              <img src={Logo} alt="logo" className="register-logos"/>
-              <h1>Let's CHAT</h1>
-            </div>
-            <input
-              type="text"
-              placeholder="Username"
-              name="username"
-              onChange={(e) => handleChange(e)}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              onChange={(e) => handleChange(e)}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={(e) => handleChange(e)}
-            />
-            <input
-              type="password"
-              placeholder="Confirm Password"
-              name="confirmPassword"
-              onChange={(e) => handleChange(e)}
-            />
-            <button type="submit">Create User</button>
-            <span>
-              Already have an account ? <Link to="/login">Login.</Link>
-            </span>
-          </form>
-        </div>
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            onChange={(e) => handleChange(e)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            onChange={(e) => handleChange(e)}
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confirmPassword"
+            onChange={(e) => handleChange(e)}
+          />
+          <button type="submit">Create User</button>
+          <span>
+            Already have an account ? <Link to="/login">Login.</Link>
+          </span>
+        </form>
       </div>
       <ToastContainer />
-    </>
+    </div>
   );
 }
 

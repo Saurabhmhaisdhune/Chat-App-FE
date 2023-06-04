@@ -10,11 +10,11 @@ import "./register.css";
 function Login() {
   const navigate = useNavigate();
   const toastOptions = {
-    position: "top-center",
+    position: "top-right",
     autoClose: 8000,
     pauseOnHover: true,
     draggable: true,
-    theme: "light",
+    theme: "dark",
     borderRadius: 20,
   };
   const [values, setValues] = useState({
@@ -73,7 +73,7 @@ function Login() {
   return (
     <>
       <div className="main1">
-        <div className="main">
+  
           <form action="" onSubmit={(event) => handleSubmit(event)} className="register-form">
             <div className="brand">
               <img src={Logo} alt="logo" />
@@ -98,14 +98,7 @@ function Login() {
             </span>
           </form>
         </div>
-        <div>
-          <img
-            src="https://cdn.dribbble.com/users/1894420/screenshots/11700268/online-video-chat.gif"
-            alt="animation"
-            className="animation"
-          />
-        </div>
-      </div>
+  
       <ToastContainer />
     </>
   );

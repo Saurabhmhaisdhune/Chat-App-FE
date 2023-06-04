@@ -1,5 +1,5 @@
 .chatinput-container {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
 }
 .emoji > svg {
   font-size: 1.5rem;
-  color: #000000c8;
+  color: yellow;
   cursor: pointer;
 }
 .emoji-picker-react {
@@ -37,10 +37,6 @@
   background-color: #080420;
   width: 5px;
 }
-/* &-thumb {
-            background-color: #9a86f3;
-          }
-        } */
 
 .emoji-categories > button {
   filter: contrast(0);
@@ -60,13 +56,14 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  background-color: #ffffff34;
+  background-color: #000000;
+  color: white;
 }
 .input-field {
   width: 90%;
   height: 60%;
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: none;
   padding-left: 1rem;
   font-size: 1.2rem;
@@ -81,14 +78,14 @@
     outline: none;
 }
 .chatinput-btn{
-  padding: 0.7rem 2rem;
-  border-radius: 1rem;
+  /* padding: 0.7rem 2rem; */
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items:flex-end;
   background-color: #2d78c4;
   border: none;
-  width: auto;
+  width: 60px;
 }
 @media screen and (min-width: 720px) and (max-width: 1080px) {
  .chatinput-btn{

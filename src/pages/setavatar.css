@@ -38,14 +38,11 @@ img {
   height: 6rem;
   transition: 0.5s ease-in-out;
 }
-.selected {
-  border: 0.4rem solid #2d78c4;
-}
 .avatar:hover {
     cursor: pointer;
   }
 .submit-btn {
-    background-color: #2d78c4;
+    background-color: #000000;
   color: white;
   padding: 1rem 2rem;
   border: none;
