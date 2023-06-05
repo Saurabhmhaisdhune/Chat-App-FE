@@ -5,8 +5,7 @@
   color: rgb(0, 0, 0);
   flex-direction: column;
   border: 20px;
-  /* border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px; */
+  font-family: Helvetica,sans-serif;
 }
 .img {
   height: 20rem;
