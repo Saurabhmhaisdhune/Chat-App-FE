@@ -19,7 +19,7 @@ function Login() {
   };
   const [values, setValues] = useState({
     username: "",
-    password: ""
+    password: "",
   });
 
   useEffect(() => {
@@ -32,18 +32,12 @@ function Login() {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
   const handleValidation = () => {
-    const { password, username} = values;
+    const { password, username } = values;
     if (password === "") {
-      toast.error(
-        "Email and password is required",
-        toastOptions
-      );
+      toast.error("Email and password is required", toastOptions);
       return false;
-    } else if (username.length=== "") {
-      toast.error(
-        "Email and password is required",
-        toastOptions
-      );
+    } else if (username.length === "") {
+      toast.error("Email and password is required", toastOptions);
       return false;
     }
     return true;
@@ -52,10 +46,10 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (handleValidation()) {
-      const {username, password} = values;
+      const { username, password } = values;
       const { data } = await axios.post(loginRoute, {
         username,
-        password
+        password,
       });
 
       if (data.status === false) {
@@ -71,36 +65,39 @@ function Login() {
     }
   };
   return (
-    <>
+    <div className="upperMain">
       <div className="main1">
-  
-          <form action="" onSubmit={(event) => handleSubmit(event)} className="register-form">
-            <div className="brand">
-              <img src={Logo} alt="logo" />
-              <h1>Let's CHAT</h1>
-            </div>
-            <input
-              type="text"
-              placeholder="Username"
-              name="username"
-              onChange={(e) => handleChange(e)}
-              min="3"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={(e) => handleChange(e)}
-            />
-            <button type="submit">Login User</button>
-            <span>
-              Don't have an accout ? <Link to="/register">Register.</Link>
-            </span>
-          </form>
-        </div>
-  
+        <form
+          action=""
+          onSubmit={(event) => handleSubmit(event)}
+          className="register-form"
+        >
+          <div className="brand">
+            <img src={Logo} alt="logo" className="register-logos"/>
+            <p className="NexTalk">NexTalk...</p>
+          </div>
+          <input
+            type="text"
+            placeholder="Username"
+            name="username"
+            onChange={(e) => handleChange(e)}
+            min="3"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            onChange={(e) => handleChange(e)}
+          />
+          <button type="submit">Login User</button>
+          <span>
+            Don't have an accout ? <Link to="/register">Register.</Link>
+          </span>
+        </form>
+      </div>
+
       <ToastContainer />
-    </>
+    </div>
   );
 }
 

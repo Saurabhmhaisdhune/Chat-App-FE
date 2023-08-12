@@ -23,7 +23,7 @@ const changeCurrentChat = (index,contact)=>{
         <div className="contacts-main-div">
           <div className="brands">
             <img src={Logo} alt="logo" />
-            <h3 className="contact-h3">Let's Chat</h3>
+            <h3 className="contact-h3">NexTalk...</h3>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {

@@ -7,10 +7,11 @@
   margin-bottom: 10px;
 }
 .register-logos{
-  height: 5.5rem;
+  height: 5rem;
 }
-h1 {
+.NexTalk {
   color: white;
+  font-size: 30px;
 }
 .register-form{
   display: flex;
@@ -62,9 +63,13 @@ a{
 .main1{
   display: flex;
   justify-content: center;
-  margin-top: 80px;
 }
-
+.upperMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 @media only screen and (max-width: 450px){
   .main1{
   display: flex;

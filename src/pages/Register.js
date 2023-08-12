@@ -84,7 +84,7 @@ function Register() {
     }
   };
   return (
-    <div>
+    <div className="upperMain">
       <div className="main1">
         <form
           action=""
@@ -93,7 +93,7 @@ function Register() {
         >
           <div className="brand">
             <img src={Logo} alt="logo" className="register-logos" />
-            <h1>Let's CHAT</h1>
+            <p className="NexTalk">NexTalk...</p>
           </div>
           <input
             type="text"
